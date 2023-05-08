@@ -1,24 +1,23 @@
 <!DOCTYPE html>
 <html>
+<head>
+<title>Generador de texto 1 y 0</title>
+</head>
 <body>
+<div>
+<p>
+<!-- Comenzamos la generación de caracteres 1 y 0 -->
+<?php
+// Generamos 1500 caracteres
+for ($i = 0; $i < 1500; $i++) {
+// Generamos un número aleatorio entre 0 y 1
+$random_number = mt_rand(0, 1);
 
-<label for="texto">Introduce un texto:</label>
-<input type="text" id="texto" name="texto">
-<button onclick="duplicarTexto()">Duplicar</button>
-<p id="resultado"></p>
-
-<script>
-function duplicarTexto() {
-var texto = document.getElementById("texto").value;
-var resultado = "";
-
-for (var i = 0; i < 2; i++) {
-resultado += texto + " ";
+// Imprimimos el caracter generado
+echo "$random_number";
 }
-
-document.getElementById("resultado").innerHTML = resultado;
-}
-</script>
-
+?>
+</p>
+</div>
 </body>
 </html>
