@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<label for="texto">Introduce un texto:</label>
+<input type="text" id="texto" name="texto">
+<button onclick="duplicarTexto()">Duplicar</button>
+<p id="resultado"></p>
+
+<script>
+function duplicarTexto() {
+var texto = document.getElementById("texto").value;
+var resultado = "";
+
+for (var i = 0; i < 2; i++) {
+resultado += texto + " ";
+}
+
+document.getElementById("resultado").innerHTML = resultado;
+}
+</script>
+
+</body>
+</html>
